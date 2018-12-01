@@ -1,0 +1,25 @@
+a simple client and server application.
+As soon as a client signups, a seperate directory for client is created in root folder.
+
+The client is able to->
+1) upload a file
+2) share file with another user
+3) delete a file
+4) download a file
+5) open a file without downloading
+
+( Their is no size restriction on file to be uploaded or downloaded)
+
+The code to support all of these activities is present in the server.
+
+Also three database files are created and used using sqlite.
+
+Multi- threading is used for the pupose of providing multi-client support and semaphores are used to provide syncronization to the threads
+while accesing db file.
+( You can see createdb.py file to see the created db filesa and the tables present in the file) 
+ 
+
+
+--------------------------------------------------------------------------
+To run client and server on seperate machine, chenge the ip address in client.py to that of the server.
+
